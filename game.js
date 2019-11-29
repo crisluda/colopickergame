@@ -1,5 +1,5 @@
 // var colors=["red","blue","pink","yellow","black","brown"]
-var colors = generateRandomColor(6)
+var colors = generateRandomColor(5)
 var pikpik = document.querySelector("body")
 var squares = document.querySelectorAll(".square")
 var pickColor = pickColors()
