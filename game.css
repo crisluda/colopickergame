@@ -1,0 +1,52 @@
+body {
+    background-color: burlywood;
+}
+
+.cont {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.square {
+    background-color: blue;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 4.66px;
+    float: left;
+    border-radius: 15%;
+}
+
+.great {
+    text-align: center;
+}
+
+#massage {
+    text-align: ;
+    width: ;
+    height: 30px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#reset {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+}
+
+span {
+    text-align: center;
+}
+
+#stripe {
+    background: white;
+    height: 30ps;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    background: blue;
+}
