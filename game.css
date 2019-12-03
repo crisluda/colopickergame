@@ -1,10 +1,49 @@
 body {
     background-color: burlywood;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    background: steelblue;
+    font-weight: initial;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.1;
+    padding: 20px 0px;
+}
+
+#colordisplay {
+    font-size: 200%;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: initial;
+    transition: all 0.3s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+button:hover {
+    background: steelblue;
+    color: white;
+}
+
+#massage {
+    width: 20%;
 }
 
 .cont {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .square {
@@ -14,6 +53,9 @@ body {
     margin: 4.66px;
     float: left;
     border-radius: 15%;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
 
 .great {
@@ -48,5 +90,6 @@ span {
 }
 
 .selected {
-    background: blue;
+    background: steelblue;
+    color: white;
 }

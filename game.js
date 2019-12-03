@@ -1,5 +1,10 @@
 // var colors=["red","blue","pink","yellow","black","brown"]
+<<<<<<< HEAD
 var colors = generateRandomColor(6)
+=======
+var numSquares = 6
+var colors = generateRandomColor(numSquares)
+>>>>>>> test
 var pikpik = document.querySelector("body")
 var squares = document.querySelectorAll(".square")
 var pickColor = pickColors()
@@ -13,18 +18,41 @@ var hardBtn = document.querySelector("#hardBtn")
 easyBtn.addEventListener("click", function () {
     easyBtn.classList.add("selected")
     hardBtn.classList.remove("selected")
+    numSquares = 3
+    colors = generateRandomColor(numSquares)
+    pickColor = pickColors()
+    colordisplays.textContent = pickColor
+    for (var i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.background = colors[i]
+        } else {
+            squares[i].style.display = "none"
+        }
+
+
+    }
 })
 hardBtn.addEventListener("click", function () {
     hardBtn.classList.add("selected")
     easyBtn.classList.remove("selected")
+    numSquares = 6
+    colors = generateRandomColor(numSquares)
+    pickColor = pickColors()
+    colordisplays.textContent = pickColor
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.background = colors[i]
+        squares[i].style.display = "block"
+
+
+    }
 })
 resetButton.addEventListener("click", function () {
-    colors = generateRandomColor(6)
+    colors = generateRandomColor(numSquares)
     pickColor = pickColors()
     colordisplays.textContent = pickColor
     for (i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i]
-        hrm.style.background = "burlywood"
+        hrm.style.background = "steelblue"
 
     }
 })
