@@ -1,10 +1,6 @@
 // var colors=["red","blue","pink","yellow","black","brown"]
-<<<<<<< HEAD
-var colors = generateRandomColor(6)
-=======
 var numSquares = 6
 var colors = generateRandomColor(numSquares)
->>>>>>> test
 var pikpik = document.querySelector("body")
 var squares = document.querySelectorAll(".square")
 var pickColor = pickColors()
