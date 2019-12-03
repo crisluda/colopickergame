@@ -14,7 +14,7 @@ var hardBtn = document.querySelector("#hardBtn")
 easyBtn.addEventListener("click", function () {
     easyBtn.classList.add("selected")
     hardBtn.classList.remove("selected")
-    var numSquares = 3
+    numSquares = 3
     colors = generateRandomColor(numSquares)
     pickColor = pickColors()
     colordisplays.textContent = pickColor
@@ -31,7 +31,7 @@ easyBtn.addEventListener("click", function () {
 hardBtn.addEventListener("click", function () {
     hardBtn.classList.add("selected")
     easyBtn.classList.remove("selected")
-    var numSquares = 6
+    numSquares = 6
     colors = generateRandomColor(numSquares)
     pickColor = pickColors()
     colordisplays.textContent = pickColor
@@ -43,12 +43,12 @@ hardBtn.addEventListener("click", function () {
     }
 })
 resetButton.addEventListener("click", function () {
-    colors = generateRandomColor(6)
+    colors = generateRandomColor(numSquares)
     pickColor = pickColors()
     colordisplays.textContent = pickColor
     for (i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i]
-        hrm.style.background = "burlywood"
+        hrm.style.background = "steelblue"
 
     }
 })
