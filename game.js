@@ -28,7 +28,7 @@ easyBtn.addEventListener("click", function () {
 
     }
 })
-hardBtn.addEventListener("click", function () {
+hardBtn.addEventListener("click", () => {
     hardBtn.classList.add("selected")
     easyBtn.classList.remove("selected")
     numSquares = 6
@@ -42,10 +42,12 @@ hardBtn.addEventListener("click", function () {
 
     }
 })
-resetButton.addEventListener("click", function () {
+resetButton.addEventListener("click", () => {
     colors = generateRandomColor(numSquares)
     pickColor = pickColors()
     colordisplays.textContent = pickColor
+    wrong.textContent = ""
+    this.textContent = "new colors"
     for (i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i]
         hrm.style.background = "steelblue"
@@ -55,7 +57,7 @@ resetButton.addEventListener("click", function () {
 colordisplays.textContent = pickColor
 for (i = 0; i < squares.length; i++) {
     squares[i].style.background = colors[i]
-    squares[i].addEventListener("click", function () {
+    squares[i].addEventListener("click", () => {
         clickColor = this.style.background
         if (clickColor === pickColor) {
             // squares[i].style.background=pickColor
